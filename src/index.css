@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-primary: #C61F1F;
+    --color-dark: #000;
+    --color-content: #111111;
+}
+
+.container{
+    max-width: 1212px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+body{
+    background-color: black;
+}
+
+/* style.css for Card and CardCarousel components */
+.bg-dark {
+  background-color: #1a1a1a; /* Dark background for card */
+}
+
+/* Card container */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3); /* Enhanced red shadow */
+}
+
+/* Image scaling */
+.card img {
+  transition: transform 0.3s ease;
+}
+
+/* Carousel container */
+.container {
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+}
+
+/* Enhanced scrollbar hiding for all browsers */
+.scrollbar-none {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.scrollbar-none::-webkit-scrollbar-track {
+  background: transparent; /* Fallback for any visible track */
+}
+
+.scrollbar-none::-webkit-scrollbar-thumb {
+  background: transparent; /* Fallback for any visible thumb */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .card {
+    width: 160px;
+  }
+
+  .card img {
+    height: 300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 480px; /* 2 cards * (220px width + 16px margin) = 480px */
+  }
+
+  .card {
+    width: 220px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 944px; /* 4 cards * (220px width + 16px margin) = 944px */
+  }
+
+  .card {
+    width: 220px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 944px; /* Maintain 4 cards visible */
+  }
+}
+
