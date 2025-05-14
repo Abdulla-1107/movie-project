@@ -14,7 +14,7 @@ import { MdOutlineSportsBasketball } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="container mx-auto w-full max-w-[1180px] mb-1.5 p-7 rounded bg-[#111111]">
+    <footer className="container mx-auto w-full max-w-[1180px] mb-1.5 p-7 rounded-[10px] bg-[#111111]">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div>
           <img src={logo} alt="logo" className="h-12 mb-12" />

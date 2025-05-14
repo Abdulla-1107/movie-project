@@ -1,4 +1,3 @@
-import Category from '@/components/category/Category';
 import MovieView from '@/components/movie-view/MovieView';
 import Skeleton from '@/components/skeleton/Skeleton';
 import { useFetch } from '@/hooks/useFetch'
@@ -9,7 +8,6 @@ const Home = () => {
 
   return (
     <div>
-      {/* <Category/> */}
       <MovieView movies={data?.results}/>
       {loading && <Skeleton count={20}/>}
     </div>

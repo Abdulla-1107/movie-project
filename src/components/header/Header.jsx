@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <header className="container mx-auto flex flex-wrap items-center justify-between py-4 gap-4 text-white mb-3 px-4">
+    <header className=" flex flex-wrap items-center justify-around py-4 gap-4 text-white mb-3 px-4">
       <div className="flex-shrink-0">
         <img src={logo} alt="Logo" className="h-10 w-auto" />
       </div>
@@ -29,7 +29,7 @@ const Header = () => {
       <nav
         className={`${
           isMenuOpen ? 'flex' : 'hidden'
-        } md:flex flex-col md:flex-row justify-center gap-4 md:gap-6 lg:gap-8 order-3 md:order-2 w-full md:w-auto mt-4 md:mt-0 md:bg-transparent absolute md:static top-16 left-0 md:top-auto md:left-auto z-10 md:z-auto px-4 md:px-0 py-4 md:py-0 transition-all duration-300 ease-in-out ${
+        } md:flex flex-col md:flex-row justify-center gap-9 md:gap-6 lg:gap-8 order-3 md:order-2 w-full md:w-auto mt-4 md:mt-0 md:bg-transparent absolute md:static top-16 left-0 md:top-auto md:left-auto z-10 md:z-auto px-4 md:px-0 py-4 md:py-0 transition-all duration-300 ease-in-out ${
           isMenuOpen ? 'opacity-100' : 'opacity-0 md:opacity-100'
         }`}
       >
